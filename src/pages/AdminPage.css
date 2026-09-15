@@ -1,0 +1,97 @@
+.adminTheme {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 0 120px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  direction: rtl;
+  background: transparent;
+  box-shadow: none;
+}
+
+.adminTheme .adminHeader {
+  min-height: 104px;
+  margin: 0 0 10px;
+  padding: 18px 20px;
+  color: #fff;
+  background: linear-gradient(115deg, #37003c 0 72%, #00ff87 72.2%);
+}
+.adminTheme .adminHeader .brandmark { width: 52px; height: 52px; padding: 8px; border-radius: 50%; color: #37003c !important; background: #00ff87; }
+.adminTheme .adminHeaderCopy { min-width: 0; margin-inline-end: auto; }
+.adminTheme .adminHeader h2 { color: #fff; font-size: 24px; }
+.adminTheme .adminHeader small { color: #00ff87; font-size: 9px; }
+.adminSecureBadge { flex: 0 0 auto; padding: 6px 9px; border: 1px solid rgba(255,255,255,.45); border-radius: 3px; color: #fff; font-size: 9px; font-weight: 900; letter-spacing: .8px; }
+
+.adminTheme .adminSubNav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0 0 10px;
+  padding: 7px;
+  gap: 5px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.adminTheme .adminSubNav button { min-height: 38px; padding: 7px 13px; border-radius: 3px; white-space: nowrap; }
+.adminTheme .adminSubNav button.active { color: #37003c; border-color: #00ff87; background: #00ff87; }
+
+.adminTheme .card { margin-bottom: 10px; padding: 16px; border-radius: 5px; box-shadow: none; }
+.adminTheme .card > .disp { color: #37003c; font-size: 18px; }
+.adminTheme .btn { min-height: 40px; border-radius: 3px; box-shadow: none; }
+.adminTheme input,
+.adminTheme select { min-height: 42px; border-radius: 3px; }
+.adminTheme .prow { gap: 8px; border-radius: 3px; }
+.adminTheme .plist { max-height: none; }
+.adminTheme .adminMotto { padding: 14px; color: #fff; background: #37003c; }
+.adminTheme table { min-width: 560px; }
+.adminContentSwitch { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 8px; padding: 4px; background: #fff; }
+.adminContentSwitch button { min-height: 38px; border: 0; border-radius: 3px; color: #37003c; background: #eee9ef; font: inherit; font-weight: 900; }
+.adminContentSwitch button.active { background: #00ff87; }
+.hostContentManager .card { display: grid; gap: 8px; }
+.volleyAdmin .card { display: grid; gap: 8px; }.volleyAdminPlayer { min-height: 54px; display: grid; grid-template-columns: 15px 1fr auto auto; align-items: center; gap: 6px; border-bottom: 1px solid var(--line); }.volleyAdminPlayer i { width: 14px; height: 36px; border-radius: 3px; }.volleyAdminPlayer small { display: block; color: var(--muted); font-size: 9px; }.volleyRound > b { padding: 8px; color: #087f5b; background: #d8f5e8; text-align: center; }.volleyRound > b.locked { color: #b71c1c; background: #ffe0e0; }.volleyStatsGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px; }.volleyStatsGrid label { padding: 7px; display: flex; align-items: center; justify-content: space-between; gap: 5px; border: 1px solid var(--line); }.volleyStatsGrid label span { font-size: 10px; }.volleyStatsGrid input { width: 64px; }.volleyFinalize { width: 100%; min-height: 45px; }
+.adminContentPreview { width: 120px; height: 90px; object-fit: cover; border-radius: 5px; }
+.adminContentRow { display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.adminContentRow > img,
+.adminContentRow > span { width: 52px; height: 52px; border-radius: 5px; object-fit: cover; background: #eee9ef; }
+.adminContentRow > strong { min-width: 0; overflow-wrap: anywhere; }
+.adminContentRow > div { display: flex; flex-wrap: wrap; gap: 4px; }
+.adminTheme .card > div[style*="overflowX"] { max-width: 100%; overflow-x: auto !important; }
+
+@media (max-width: 600px) {
+  .admin-app-shell { width: 100%; max-width: none; padding: 8px 8px 115px; overflow-x: hidden; }
+  .admin-app-shell .top { padding-inline: 4px; }
+  .adminTheme { padding-bottom: 12px; }
+  .adminTheme .adminHeader { min-height: 88px; padding: 14px 12px; background: #37003c; }
+  .adminTheme .adminHeader .brandmark { width: 42px; height: 42px; }
+  .adminTheme .adminHeader h2 { font-size: 19px; }
+  .adminTheme .adminHeader small { max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .adminSecureBadge { padding: 5px 6px; font-size: 8px; }
+  .adminTheme .adminSubNav { margin-inline: -8px; padding-inline: 8px; border-inline: 0; overflow-x: auto; }
+  .adminTheme .adminSubNav button { min-height: 36px; padding: 6px 11px; font-size: 11px; }
+  .adminTheme .card { padding: 13px 11px; }
+  .adminTheme .card > .disp { font-size: 16px; }
+  .adminTheme .row { width: 100%; gap: 7px; }
+  .adminTheme .row > div { min-width: min(100%, 120px) !important; }
+  .adminTheme .prow { align-items: stretch; padding: 10px 8px; }
+  .adminTheme .prow > .info { min-width: 100%; }
+  .adminTheme .prow > .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .adminTheme .prow > .row .btn { width: 100%; padding: 7px 5px; }
+  .adminTheme .prow > .row input[type="number"] { width: 100% !important; }
+  .adminTheme .colorpick { width: 44px !important; min-height: 38px; }
+  .adminTheme table { min-width: 520px; font-size: 11px; }
+  .adminTheme .modal-box { max-height: 88dvh; overflow-y: auto; }
+  .adminContentRow { grid-template-columns: 46px 1fr; }
+  .adminContentRow > img,
+  .adminContentRow > span { width: 42px; height: 42px; }
+  .adminContentRow > div { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, 1fr); }
+  .volleyStatsGrid { grid-template-columns: 1fr; }
+  .volleyAdminPlayer { grid-template-columns: 12px 1fr auto; }.volleyAdminPlayer .danger { grid-column: 2 / -1; }
+}
+
+@media (max-width: 380px) {
+  .adminTheme .adminHeader { padding-inline: 10px; }
+  .adminSecureBadge { display: none; }
+  .adminTheme .card { padding-inline: 9px; }
+}
